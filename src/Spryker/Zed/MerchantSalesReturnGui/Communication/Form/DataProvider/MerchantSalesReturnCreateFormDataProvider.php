@@ -113,7 +113,7 @@ class MerchantSalesReturnCreateFormDataProvider
     }
 
     /**
-     * @param list<string> $merchantOrdersReferences
+     * @param array<string> $merchantOrdersReferences
      *
      * @return array<string, array<string, mixed>>
      */
@@ -140,7 +140,7 @@ class MerchantSalesReturnCreateFormDataProvider
     /**
      * @param \ArrayObject<int, \Generated\Shared\Transfer\ItemTransfer> $itemTransfers
      *
-     * @return list<string>
+     * @return array<string>
      */
     public function getMerchantOrdersReferences(ArrayObject $itemTransfers): array
     {
@@ -157,7 +157,7 @@ class MerchantSalesReturnCreateFormDataProvider
     }
 
     /**
-     * @param list<string> $merchantOrderReferences
+     * @param array<string> $merchantOrderReferences
      *
      * @return \Generated\Shared\Transfer\MerchantOrderCriteriaTransfer
      */
