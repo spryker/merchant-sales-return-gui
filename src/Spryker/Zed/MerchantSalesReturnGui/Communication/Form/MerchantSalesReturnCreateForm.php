@@ -35,11 +35,6 @@ class MerchantSalesReturnCreateForm extends AbstractType
      */
     protected const TEMPLATE_PATH = '@MerchantSalesReturnGui/SalesReturn/Create/_partials/return-create-merchant-order.twig';
 
-    /**
-     * @param \Symfony\Component\OptionsResolver\OptionsResolver $resolver
-     *
-     * @return void
-     */
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setRequired([static::OPTION_RETURN_REASONS]);

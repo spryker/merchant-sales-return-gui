@@ -45,9 +45,6 @@ class MerchantSalesReturnCreateFormDataProvider
      */
     protected MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface $merchantSalesOrderFacade;
 
-    /**
-     * @param \Spryker\Zed\MerchantSalesReturnGui\Dependency\Facade\MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface $merchantSalesOrderFacade
-     */
     public function __construct(MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface $merchantSalesOrderFacade)
     {
         $this->merchantSalesOrderFacade = $merchantSalesOrderFacade;

@@ -12,11 +12,6 @@ use Generated\Shared\Transfer\MerchantOrderCriteriaTransfer;
 
 interface MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantOrderCriteriaTransfer $merchantOrderCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantOrderCollectionTransfer
-     */
     public function getMerchantOrderCollection(
         MerchantOrderCriteriaTransfer $merchantOrderCriteriaTransfer
     ): MerchantOrderCollectionTransfer;

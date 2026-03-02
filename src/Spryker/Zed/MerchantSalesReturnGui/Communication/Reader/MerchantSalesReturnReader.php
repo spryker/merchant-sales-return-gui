@@ -22,9 +22,6 @@ class MerchantSalesReturnReader implements MerchantSalesReturnReaderInterface
      */
     protected $merchantSalesOrderFacade;
 
-    /**
-     * @param \Spryker\Zed\MerchantSalesReturnGui\Dependency\Facade\MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface $merchantSalesOrderFacade
-     */
     public function __construct(MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface $merchantSalesOrderFacade)
     {
         $this->merchantSalesOrderFacade = $merchantSalesOrderFacade;

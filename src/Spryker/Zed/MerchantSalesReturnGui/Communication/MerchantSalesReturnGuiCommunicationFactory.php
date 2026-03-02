@@ -23,9 +23,6 @@ use Symfony\Component\Form\FormTypeInterface;
  */
 class MerchantSalesReturnGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantSalesReturnGui\Communication\Form\DataProvider\MerchantSalesReturnCreateFormDataProvider
-     */
     public function createMerchantSalesReturnCreateFormDataProvider(): MerchantSalesReturnCreateFormDataProvider
     {
         return new MerchantSalesReturnCreateFormDataProvider(
@@ -33,17 +30,11 @@ class MerchantSalesReturnGuiCommunicationFactory extends AbstractCommunicationFa
         );
     }
 
-    /**
-     * @return \Symfony\Component\Form\FormTypeInterface
-     */
     public function createMerchantSalesReturnCreateForm(): FormTypeInterface
     {
         return new MerchantSalesReturnCreateForm();
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantSalesReturnGui\Communication\Form\Handler\MerchantSalesReturnCreateFormHandlerInterface
-     */
     public function createMerchantSalesReturnCreateFormHandler(): MerchantSalesReturnCreateFormHandlerInterface
     {
         return new MerchantSalesReturnCreateFormHandler();
@@ -59,9 +50,6 @@ class MerchantSalesReturnGuiCommunicationFactory extends AbstractCommunicationFa
         return new MerchantSalesReturnReader($this->getMerchantSalesOrderFacade());
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantSalesReturnGui\Dependency\Facade\MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface
-     */
     public function getMerchantSalesOrderFacade(): MerchantSalesReturnGuiToMerchantSalesOrderFacadeInterface
     {
         return $this->getProvidedDependency(MerchantSalesReturnGuiDependencyProvider::FACADE_MERCHANT_SALES_ORDER);
